@@ -1,38 +1,63 @@
-# Rubik-s-Cube
+# 🧠 Rubik’s Cube Solver
 
-Rubik’s Cube Solver
-An interactive and extensible algorithmic solver for the standard 3x3 Rubik’s Cube—implemented with a web-based visual UI and scalable to other twisty puzzles.
+An interactive and extensible algorithmic solver for the standard **3x3 Rubik’s Cube**, implemented with a web-based visual UI and scalable to other twisty puzzles.
 
-🚀 Overview
+## 🚀 Overview
+
 This project models and solves the Rubik’s Cube using only valid cube moves, closely mirroring real-world solving techniques. Scramble any cube state, visualize the solution step-by-step, and learn from algorithmic strategies in real-time.
 
-✨ Features
-Full Simulator: Interactive 3D UI for scrambling, solving, and exploring the cube.
+## ✨ Features
 
-Algorithmic Solver: Finds solutions from any scrambled state using efficient, layered algorithms (twists, commutators, conjugates).
+- **🎲 Full Simulator**  
+  Interactive 3D UI for scrambling, solving, and exploring the cube.
 
-Visualization: Step-by-step playback of each move (with move names, highlighting, and undo/redo).
+- **🧠 Algorithmic Solver**  
+  Finds solutions from any scrambled state using efficient, layered algorithms (twists, commutators, conjugates).
 
-Scalability: Supports 2x2, 3x3, 4x4 cubes and other polyhedral puzzles (Dodecahedron, Tetrahedron, etc.).
+- **👁️ Visualization**  
+  Step-by-step playback of each move (with move names, face highlighting, and undo/redo support).
 
-Custom Analysis: Advanced tools to manipulate states, including point-and-swap to study edge cases.
+- **📈 Scalability**  
+  Supports 2x2, 3x3, 4x4 cubes and other polyhedral puzzles (Dodecahedron, Tetrahedron, etc.).
 
-Performance: Leverages browser web workers for fast solving and smooth UI responsiveness.
+- **🧪 Custom Analysis**  
+  Advanced tools to manipulate cube states, including point-and-swap to study edge cases.
 
-⚙️ Technical Approach
-Data structures: Models each sticker, face, and cube slice as objects, with fast permutation-based state updates.
+- **⚡ Performance**  
+  Leverages browser web workers for fast solving and smooth UI responsiveness.
 
-Move Engine: Moves are abstractions of sticker permutations, applied efficiently via composable cycles.
+## ⚙️ Technical Approach
 
-Cluster-based Solving: Reduces solution space using groupings of swappable stickers and cached commutator patterns.
+- **Data Structures**  
+  Each sticker, face, and slice of the cube is modeled as an object. Fast permutation-based updates ensure real-time responsiveness.
 
-Efficient State Tracking: Maintains permutation maps and solver stacks for instant replay, undo/redo, and state validation.
+- **Move Engine**  
+  Cube moves are applied as efficient composable permutations via cycle notation.
 
-🧩 How to Use
-Open the UI. Select your cube size and shape.
+- **Cluster-based Solving**  
+  Solution space is reduced using swappable sticker groupings and cached commutator patterns.
 
-Scramble the cube (randomly or manually).
+- **Efficient State Tracking**  
+  Permutation maps and solver stacks allow for instant replay, undo/redo, and validation.
 
-Click "Solve" to generate a step-by-step solution—watch the cube animate each legal move back to solved!
+## 🧩 How to Use
 
-Use additional features for stats, alternative views, or explore generalized puzzles.
+1. **Open the Web UI**  
+   Launch the application in your browser.
+
+2. **Choose Cube Type**  
+   Select your cube size (2x2, 3x3, 4x4) or puzzle shape (tetrahedron, dodecahedron, etc.).
+
+3. **Scramble**  
+   Scramble the cube either randomly or manually.
+
+4. **Solve**  
+   Click **"Solve"** to watch the step-by-step animation solving the puzzle using legal moves.
+
+5. **Explore**  
+   Use additional tools for:
+   - Tracking move history
+   - Inspecting states
+   - Trying alternative solving strategies
+
+
