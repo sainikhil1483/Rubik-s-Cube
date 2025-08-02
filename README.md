@@ -12,12 +12,8 @@ The project contains a basic framework to create different 3D twisty puzzles. It
 
 The contained defnitions can be extended to model other known shapes or to create completely new permutation puzzles with crazy structures!
 
-Live demo:
-https://aditya-r-m.github.io/twisty-polyhedra
-
 Techniques used to build the interface:
-https://medium.com/@adityam.rtm/creating-3d-twisty-puzzles-using-programming-5800fb7eaab8
-
+https://github.com/sainikhil1483/Rubik-s-Cube
 The interface relies on cursor/touch gestures and works well with pc/mobile setups running chrome/firefox/etc.
 
 ## Solver <a name="solver"></a>
@@ -68,21 +64,9 @@ We identify which cluster fall in these categories just by looking at the result
 
 | Puzzle       | Edge size | Preprocessing time (ms) | Processing time (ms) | Solution length |
 | ------------ | --------- | ----------------------- | -------------------- | --------------- |
-| Tetrahedron  | 3         | 468                     | 11                   | 38              |
-| Tetrahedron  | 4         | 1837                    | 15                   | 106             |
-| Tetrahedron  | 5         | 5654                    | 19                   | 250             |
 | Cube         | 2         | 149                     | 23                   | 64              |
 | Cube         | 3         | 1066                    | 32                   | 148             |
 | Cube         | 4         | 7052                    | 62                   | 340             |
-| Octahedron   | 2         | 216                     | 3                    | 33              |
-| Octahedron   | 3         | 2301                    | 13                   | 172             |
-| Octahedron   | 4         | 9839                    | 19                   | 366             |
-| Dodecahedron | 2         | 3729                    | 499                  | 388             |
-| Dodecahedron | 4         | 88374                   | 804                  | 2202            |
-| Dodecahedron | 6         | 441504                  | 2837                 | 4050            |
-| Icosahedron  | 2         | 4317                    | 130                  | 568             |
-| Icosahedron  | 3         | 26648                   | 272                  | 1312            |
-| Icosahedron  | 4         | 104973                  | 563                  | 2252            |
 
 ### Potential Improvements <a name="improvements"></a>
 
